@@ -20,7 +20,8 @@ db.sqlite3-journal
 *$py.class
 # C extensions
 *.so
-
+temp
+.env
 # Distribution / packaging
 .Python
 build/

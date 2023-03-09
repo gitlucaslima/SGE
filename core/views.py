@@ -1,6 +1,5 @@
 import base64
 import datetime as dt
-import locale
 import os
 import time
 from datetime import date, datetime, timedelta
@@ -623,13 +622,6 @@ def novoEmprestimo(request):
         # Importação do doc que será usado como template
         doc = DocxTemplate("media/modelo/modeloRespo.docx")
 
-        locale.getlocale()
-        ('pt_BR', 'UTF-8')
-
-        # this sets the date time formats to es_ES, there are many other options for currency, numbers etc.
-        locale.setlocale(locale.LC_TIME, 'pt_BR')
-        'pt_BR'
-
         today = dt.datetime.now()
 
         dt.datetime(2020, 2, 14, 10, 33, 56, 487228)
@@ -827,13 +819,6 @@ def editarEmprestimo(request, id):
         # Importação do doc que será usado como template
         doc = DocxTemplate("media/modelo/modeloRespo.docx")
 
-        locale.getlocale()
-        ('pt_BR', 'UTF-8')
-
-        # this sets the date time formats to es_ES, there are many other options for currency, numbers etc.
-        locale.setlocale(locale.LC_TIME, 'pt_BR')
-        'pt_BR'
-
         today = dt.datetime.now()
 
         dt.datetime(2020, 2, 14, 10, 33, 56, 487228)
@@ -979,13 +964,6 @@ def finalizarEmprestimo(request, id):
 
         # Importação do doc que será usado como template
         doc = DocxTemplate("media/modelo/modeloDevo.docx")
-
-        locale.getlocale()
-        ('pt_BR', 'UTF-8')
-
-        # this sets the date time formats to es_ES, there are many other options for currency, numbers etc.
-        locale.setlocale(locale.LC_TIME, 'pt_BR')
-        'pt_BR'
 
         today = dt.datetime.now()
 
